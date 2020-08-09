@@ -128,7 +128,7 @@ void FileChooseWidget::cuter(QStringList selected_files)
         }
         else
         {
-            mklk<<"python3 "<<RUNDIR<<"CuteR.py "<<color.toStdString()<<" -o \""<<pathStr.toStdString()<<"/sample_output.png"<<"\" "<<tmp.toStdString()<<" "<<textdata.toStdString();
+            mklk<<"python3 "<<RUNDIR<<"CuteR.py "<<color.toStdString()<<" -o \""<<pathStr.toStdString()<<"/sample_output.png"<<"\" \""<<tmp.toStdString()<<"\" "<<textdata.toStdString();
             //mklk<<RUNDIR<<"tinypng"<<" -f \""<<tmp.toStdString()<<"\" -d \""<<pathStr.toStdString()<<"\"";
             qmklk = QString::fromStdString(mklk.str());
             qDebug()<<qmklk;
