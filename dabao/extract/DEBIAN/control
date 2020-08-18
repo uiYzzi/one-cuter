@@ -1,0 +1,12 @@
+Package: top.yzzi.onecuter
+Version: 1.1
+Architecture: amd64
+Maintainer: 一只科技菌
+Installed-Size: 56
+Depends: python3,python3-qrcode
+Section: unknown
+Priority: extra
+Homepage: https://blog.yzzi.top
+Description: 
+ 可爱的二维码生成器
+ 主页: https://blog.yzzi.top

@@ -4,4 +4,5 @@
         <file>images/changed.png</file>
         <file>images/icon.svg</file>
     </qresource>
+    <qresource prefix="/"/>
 </RCC>

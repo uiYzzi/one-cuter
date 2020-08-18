@@ -16,8 +16,8 @@
 
 using namespace std;
 QHash<QString, QPixmap> m_imgCacheHash;
-FileChooseWidget::FileChooseWidget(QWidget *parent) :
-    QWidget(parent)
+FileChooseWidget::FileChooseWidget(DBlurEffectWidget *parent) :
+    DBlurEffectWidget(parent)
 {
     this->setAcceptDrops(true);
     m_iconImage = new DLabel(this);//图标
@@ -27,6 +27,7 @@ FileChooseWidget::FileChooseWidget(QWidget *parent) :
     m_changedImage = new DLabel(this);//成功图标
     m_changedImage->setFixedSize(157, 170);
     m_changedImage->setPixmap(Utils::renderSVG(":/new/prefix1/images/changed.png", QSize(157, 170)));
+
 
 
     DGuiApplicationHelper *guiAppHelp = DGuiApplicationHelper::instance();
@@ -46,14 +47,15 @@ FileChooseWidget::FileChooseWidget(QWidget *parent) :
 
 
     QVBoxLayout *centralLayout = new QVBoxLayout(this);
-    centralLayout->addSpacing(55);
+
+    centralLayout->addSpacing(20);
     centralLayout->addWidget(m_iconImage);
     centralLayout->setAlignment(m_iconImage, Qt::AlignHCenter);
     centralLayout->addWidget(m_changedImage);
     centralLayout->setAlignment(m_changedImage, Qt::AlignHCenter);
     m_changedImage->hide();
 
-    centralLayout->addSpacing(30);
+    centralLayout->addSpacing(5);
     centralLayout->addWidget(m_dndTips);
     centralLayout->setAlignment(m_dndTips, Qt::AlignHCenter);
 

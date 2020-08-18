@@ -6,6 +6,8 @@
 #include <QSettings>
 #include <DLabel>
 #include <QPushButton>
+#include <DBlurEffectWidget>
+
 DWIDGET_USE_NAMESPACE
 extern QString color;
 
@@ -13,14 +15,14 @@ namespace Ui {
 class FileChooseWidget;
 }
 
-class FileChooseWidget : public QWidget
+class FileChooseWidget : public DBlurEffectWidget
 {
     Q_OBJECT
 signals:
     void packagesSelected(const QStringList files) const;
 
 public:
-    explicit FileChooseWidget(QWidget *parent = nullptr);
+    explicit FileChooseWidget(DBlurEffectWidget *parent = nullptr);
     ~FileChooseWidget();
 private slots:
     void closeChanged();

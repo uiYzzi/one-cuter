@@ -42,10 +42,10 @@ CONFIG += c++11
 FORMS +=
 
 RESOURCES += \
-    assets/resources.qrc
+    ../assets/resources.qrc
 TRANSLATIONS = \
     language.zh_CN.ts
 
 DISTFILES += \
     CuteR.py \
-    assets/images/icon.svg
+    ../assets/images/icon.svg

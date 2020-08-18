@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=OneCuteR
+Name[zh_CN]=一只二维码
+Name[zh_TW]=壹只QR
+Comment=OneCuteR
+Comment[zh_CN]=一只二维码
+Comment[zh_TW]=壹只QR
+Icon=top.yzzi.onecuter
+Exec=/opt/apps/top.yzzi.onecuter/files/OneCuteR
+Categories=Graphics;
+Terminal=false
+StartupNotify=true
+StartupWMClass=OneCuteR
